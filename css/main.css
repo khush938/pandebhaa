@@ -9,19 +9,6 @@
     src: url(../font/BenguiatNormal.ttf);
   }
 
-.landing{
-    /* scroll-snap-type: y mandatory; */
-    /* overflow-y: scroll; */
-    height: 100vh;
-}
-
-.one{
-    background: url('../images/bg-1.jpeg');
-    background-position: bottom;
-    background-size: cover;
-    height: 100vh;
-    scroll-snap-align: start;
-}
 
 .two{
     position: relative;
@@ -194,6 +181,12 @@
 	position: relative;
 }
 
+.spotify > iframe{
+    width: 70vh;
+    height: 40vh;
+    
+}
+
 .faculty-main{
 	display: flex;
 	text-align: center;
@@ -218,7 +211,6 @@
 	right: -100px;
 	top: -400px;
 	height: 400px;
-	transform: rotate(-5deg);
 }
 
 .edu-block{
@@ -337,6 +329,46 @@
       flex: 50%;
       max-width: 50%;
     }
+    .landing-main > h2{
+        position: absolute;
+        color: white;
+        font-size: 2rem;
+        top: 37.5%;
+        left: 50%;
+        transform: translate( -50%);
+        filter: blur(5);
+    }
+    
+    .h31{
+        position: absolute;
+        color: rgb(248, 248, 248);
+        font-size: 8rem;
+        top: 25%;
+        left: 50%;
+        transform: translate( -50%);
+        font-family: STRANGERFONT;
+    }
+    
+    .h32{
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-size: 8rem;
+        top: 40%;
+        left: 50%;
+        transform: translate( -50%);
+        font-family: STRANGERFONT; 
+    }
+    
+    .spotify > iframe{
+        width: 40vh;
+        height: 40vh;
+    }
+    .faculty-main{
+        height: 100vh;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        padding: 100px;
+    }
   }
   
  
@@ -345,9 +377,110 @@
       flex: 100%;
       max-width: 100%;
     }
-  }
+    .two > img{
+        position: absolute;
+        bottom: -30;
+        height: 50vh;
+        left: 50%;
+    }
+    .two > h1 {
+        font-size: 2rem;
+    }
 
-  .q-footer{
+    .two > h4{
+        color: azure;
+        font-size: 1rem;
+    }
+    .left {
+        position: absolute;
+        left: 5%;
+        top: 15%;
+    }
+    
+    .right {
+        position: absolute;
+        left: 20%;
+        top: 11%;
+    }
+    
+    .right-second {
+        position: absolute;
+        left: 8%;
+        top: 7%;
+    }
+    .landing-main > h2{
+        position: absolute;
+        color: white;
+        font-size: 2rem;
+        top: 33%;
+        left: 50%;
+        transform: translate( -50%);
+        filter: blur(5);
+    }
+    
+    .h31{
+        position: absolute;
+        color: rgb(248, 248, 248);
+        font-size: 5rem;
+        top: 25%;
+        left: 50%;
+        transform: translate( -50%);
+        font-family: STRANGERFONT;
+    }
+    
+    .h32{
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-size: 5rem;
+        top: 40%;
+        left: 50%;
+        transform: translate( -50%);
+        font-family: STRANGERFONT; 
+    }
+    .spotify > iframe{
+        width: 40vh;
+        height: 40vh;
+    }
+    .faculty-main{
+        height: 100vh;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        padding: 100px;
+    }
+
+  }
+  @media screen and (max-width: 600px){
+    .landing-main > h2{
+        position: absolute;
+        color: white;
+        font-size: 2rem;
+        top: 33%;
+        left: 50%;
+        transform: translate( -50%);
+        filter: blur(5);
+    }
+    
+    .h31{
+        position: absolute;
+        color: rgb(248, 248, 248);
+        font-size: 4rem;
+        top: 25%;
+        left: 50%;
+        transform: translate( -50%);
+        font-family: STRANGERFONT;
+    }
+    
+    .h32{
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-size: 4rem;
+        top: 42%;
+        left: 50%;
+        transform: translate( -50%);
+        font-family: STRANGERFONT; 
+    }
+  }
+.q-footer{
     height: 10vh;
     color: black;
     padding: 30px;
